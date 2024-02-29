@@ -79,7 +79,7 @@ public class TicTacToe {
         System.out.println(" Welcome to TicTacToe Game");
         do{
         printBoard();
-        System.out.println("plyer"+currentPlayer+" 's turn");
+        System.out.println("player"+currentPlayer+" 's turn");
         System.out.println("Enter only 0,1 and 2 for Row and Coloumn");
         System.out.print("Enter ROW NO : ");
         int row=scanner.nextInt();
@@ -93,6 +93,7 @@ public class TicTacToe {
                 }
             else if(checkForDraw()){
                 System.out.println("its a draw ");
+                break;
             }
             else {
                 switchPlayer();
